@@ -1,6 +1,6 @@
 # Powston Custom Tasmota Firmware for LilyGO T-Display
 
-Welcome to the Powston Custom Tasmota Firmware repository! This project provides custom firmware for the [LilyGO T-Display](https://www.lilygo.cc/products/lilygo%C2%AE-ttgo-t-display-1-14-inch-lcd-esp32-control-board), designed to support extended MQTT packet handling and JSON parsing for real-time energy management display and control. This firmware is optimized for IoT energy devices, with integrated display commands for user-friendly monitoring on the LilyGO T-Display.
+Welcome to the Powston Custom Tasmota Firmware repository! This project provides custom firmware for the [LilyGO T-Display](https://www.lilygo.cc/products/t-display-s3), designed to support extended MQTT packet handling and JSON parsing for real-time energy management display and control. This firmware is optimized for IoT energy devices, with integrated display commands for user-friendly monitoring on the LilyGO T-Display.
 
 ![image](display.png)
 
@@ -15,7 +15,7 @@ Welcome to the Powston Custom Tasmota Firmware repository! This project provides
 
 ### Requirements
 
-- [LilyGO T-Display](https://www.lilygo.cc/products/lilygo%C2%AE-ttgo-t-display-1-14-inch-lcd-esp32-control-board) (ESP32-based, 240x135 pixel TFT display)
+- [LilyGO T-Display](https://www.lilygo.cc/products/t-display-s3) (ESP32-S3-based, 240x135 pixel TFT display)
 - [Upload Via Tasmota](https://tasmota.github.io/install/) for flashing firmware
 - [Powston](https://powston.com) account with your MQTT details
 
@@ -30,12 +30,12 @@ Welcome to the Powston Custom Tasmota Firmware repository! This project provides
 2. **Configure MQTT and Device Parameters**
    - After flashing the firmware, enter your powston MQTT details, WiFi credentials, and other device parameters.
 
-3. **Flash the Firmware**
-   - Run the script in a loop to keep your display updated as new actions are taken on your inverter.
+3. **Run the script**
+   - Run the script in a loop to update your display as new actions are taken on your inverter.
 
 ### Usage
 
-Once the device is connected to the Powston MQTT broker, it will start receiving JSON-encoded MQTT messages containing energy, price and inverter data. The firmware will:
+Once the device is connected to the Powston MQTT broker, it will receive JSON-encoded MQTT messages containing energy, price and inverter data. The firmware will:
 - Parse these messages to display relevant data such as battery state of charge (SOC), grid power, and forecasted prices.
 - Update the display with the latest data every time a new packet is received.
 
@@ -65,7 +65,7 @@ These commands allow flexible display management directly through MQTT messages,
 ## Purchasing the LilyGO T-Display
 
 You can purchase the LilyGO T-Display from the official store or other online retailers:
-- [LilyGO T-Display on $8.99](https://www.lilygo.cc/products/lilygo%C2%AE-ttgo-t-display-1-14-inch-lcd-esp32-control-board)
+- [LilyGO T-Display on $17.99](https://www.lilygo.cc/products/t-display-s3)
   
 > **Note**: Ensure that you purchase the ESP32-S3-based LilyGO T-Display, as this firmware is tailored specifically for that hardware.
 
@@ -83,7 +83,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For further assistance, reach out at service@powston.com.
+If you need any more help, please reach out at service@powston.com.
 
 ---
 
