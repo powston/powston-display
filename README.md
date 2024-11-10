@@ -2,6 +2,8 @@
 
 Welcome to the Powston Custom Tasmota Firmware repository! This project provides custom firmware for the [LilyGO T-Display](https://www.lilygo.cc/products/lilygo%C2%AE-ttgo-t-display-1-14-inch-lcd-esp32-control-board), designed to support extended MQTT packet handling and JSON parsing for real-time energy management display and control. This firmware is optimized for IoT energy devices, with integrated display commands for user-friendly monitoring on the LilyGO T-Display.
 
+![image](display.png)
+
 ## Features
 
 - **Extended MQTT Packet Handling**: Enhanced support for MQTT, enabling larger payloads to transmit more complex data for energy management.
